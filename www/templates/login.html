@@ -1,7 +1,10 @@
 <ion-view view-title="Ingresar">
-  <ion-content padding="true" class="has-header" 
-  style="text-align:center; 
+    <ion-content padding="true" class="has-header" style="text-align:center; 
   	top: 50%;">
-        <a href="#/app/main" id="iniciarSesiN-button2" style="border-radius:-1px -1px -1px -1px;" class="button button-positive  button-large icon-left ion-social-google" >Ingresar con Google</a>
-   </ion-content>
+        <div ng-hide="authData" class="card" ng-click="login()">
+            <button class="item">
+                Log In with Gmail
+            </button>
+        </div>
+    </ion-content>
 </ion-view>
